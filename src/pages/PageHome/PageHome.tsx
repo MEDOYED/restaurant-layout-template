@@ -1,9 +1,14 @@
-import './PageHome.module.scss'
+import SectionOpeningHours from "../../widgets/SectionOpeningHours/SectionOpeningHours";
+
+import "./PageHome.module.scss";
 
 const PageHome = () => {
   return (
-    <main>PageHome</main>
-  )
-}
+    <main>
+      PageHome
+      <SectionOpeningHours />
+    </main>
+  );
+};
 
-export default PageHome
+export default PageHome;
