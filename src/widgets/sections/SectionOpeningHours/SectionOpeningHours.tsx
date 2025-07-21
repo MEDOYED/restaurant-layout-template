@@ -1,4 +1,4 @@
-import dataProject from "../../shared/data/dataProject";
+import dataProject from "../../../shared/data/dataProject";
 
 import s from "./SectionOpeningHours.module.scss";
 

@@ -1,4 +1,4 @@
-import SectionOpeningHours from "../../widgets/SectionOpeningHours/SectionOpeningHours";
+import SectionOpeningHours from "../../widgets/sections/SectionOpeningHours/SectionOpeningHours";
 import SectionHero from "../../widgets/sections/SectionHero/SectionHero";
 
 import "./PageHome.module.scss";
