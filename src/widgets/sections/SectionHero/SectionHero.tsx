@@ -1,8 +1,8 @@
 import dataProject from "../../../shared/data/dataProject";
 
-import cn from "./HeroSection.module.scss";
+import cn from "./SectionHero.module.scss";
 
-const HeroSection = () => {
+const SectionHero = () => {
   return (
     <section className={cn.heroSection}>
       <h1 className={cn.companyName}>{dataProject.companyName}</h1>
@@ -10,4 +10,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default SectionHero;
