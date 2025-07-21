@@ -1,3 +1,10 @@
+@use "/src/shared/styles/fonts.scss";
+
 @import 'modern-normalize/modern-normalize.css';
 
 @import url("/src/shared/styles/reset.scss");
+
+body,
+html {
+  font-family: "Rational TW Text";
+}
