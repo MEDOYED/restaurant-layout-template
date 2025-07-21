@@ -7,7 +7,7 @@ const dataProject = {
     wednesday: "09:00–23:00",
     thursday: "09:00–00:00",
     friday: "09:00–02:00",
-    saturday: "	09:00–02:00",
+    saturday: "09:00–02:00",
     sunday: "09:00–23:00",
   },
 };
