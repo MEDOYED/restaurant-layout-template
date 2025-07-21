@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 60px 0;
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0;
+    border-bottom: 1px solid #999;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 40px;
+      border-right: 1px solid #999;
+      height: 140px;
+      align-items: center;
+
+      &:last-child {
+        border: none;
+      }
+
+      .hours {
+        margin: auto 0;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .subtitle {
+    margin-top: 30px;
+  }
+}
