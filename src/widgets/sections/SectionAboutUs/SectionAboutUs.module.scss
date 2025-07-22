@@ -7,6 +7,14 @@
     background-size: cover;
     background-position: 50% 60%;
     background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+      height: 40rem;
+    }
+
+    @media (max-width: 480px) {
+      height: 30rem;
+    }
   }
 
   .contentWrapper {
@@ -19,7 +27,7 @@
       padding: 7rem;
 
       .container {
-        max-width: 50rem;
+        max-width: 40rem;
 
         .contentHeader {
           h2 {
@@ -58,6 +66,106 @@
 
         object-fit: cover;
         object-position: center;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      height: 45rem;
+
+      .aboutContent {
+        padding: 5rem;
+
+        .container {
+          max-width: 35rem;
+
+          .contentHeader {
+            h2 {
+              font-size: 1.8rem;
+              margin-bottom: 2rem;
+            }
+          }
+
+          .description {
+            .leadParagraph {
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+            }
+
+            .secondaryParagraph {
+              font-size: 1.6rem;
+              line-height: 2.3rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      height: auto;
+
+      .aboutContent {
+        padding: 3rem 2rem;
+
+        .container {
+          max-width: none;
+
+          .contentHeader {
+            h2 {
+              font-size: 2rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+
+          .description {
+            .leadParagraph {
+              font-size: 1.7rem;
+              line-height: 2.5rem;
+              margin-bottom: 1rem;
+            }
+
+            .secondaryParagraph {
+              font-size: 1.7rem;
+              line-height: 2.4rem;
+            }
+          }
+        }
+      }
+
+      .aboutImage {
+        order: 1;
+        height: 25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .aboutContent {
+        padding: 2rem 1.5rem;
+
+        .container {
+          .contentHeader {
+            h2 {
+              font-size: 1.8rem;
+            }
+          }
+
+          .description {
+            .leadParagraph {
+              font-size: 1.6rem;
+              line-height: 2.3rem;
+            }
+
+            .secondaryParagraph {
+              font-size: 1.6rem;
+              line-height: 2.2rem;
+            }
+          }
+        }
+      }
+
+      .aboutImage {
+        height: 20rem;
       }
     }
   }
