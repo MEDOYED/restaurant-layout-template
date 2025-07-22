@@ -9,7 +9,7 @@ const PageHome = () => {
   return (
     <main className={s.pageHome}>
       <SectionHero />
-      <Header />
+
       <SectionOpeningHours />
       <SectionAboutUs />
     </main>
