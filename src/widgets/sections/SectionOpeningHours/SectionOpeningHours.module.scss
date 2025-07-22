@@ -6,31 +6,127 @@
   padding: 60px 0;
 
   .list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
     padding: 25px 0;
     border-bottom: 1px solid #999;
+
+    @media (max-width: 1550px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__item {
+        flex: 0 0 25%;
+      }
+
+      &__item:nth-child(n + 5) {
+        flex: 0 0 33.33%;
+      }
+    }
+
+    @media (max-width: 860px) {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      border-bottom: none;
+      margin: 0;
+    }
 
     &__item {
       display: flex;
       flex-direction: column;
       padding: 10px 40px;
       border-right: 1px solid #999;
-      height: 140px;
+      height: 100px;
       align-items: center;
+      // max-width: 212px;
 
       &:last-child {
         border: none;
       }
 
+      @media (max-width: 860px) {
+        border-right: none;
+        border-bottom: 1px solid #999;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 6rem;
+
+        &:first-child {
+          border-top: 1px solid #999;
+        }
+
+        &:last-child {
+          border-bottom: 1px solid #999;
+        }
+      }
+
+      @media (max-width: 400px) {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        height: 60px;
+      }
+
       .hours {
         margin: auto 0;
         font-weight: 700;
+        white-space: nowrap;
+
+        @media (max-width: 400px) {
+          margin: 2rem 0;
+        }
       }
     }
   }
 
   .subtitle {
     margin-top: 30px;
+
+    @media (max-width: 860px) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .section {
+    text-align: center;
+  }
+
+  .list {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+
+    &:nth-child(4) {
+      border-right: none;
+    }
+
+    &:nth-child(n + 5) {
+      flex: 0 0 33.333%;
+    }
+
+    &:nth-child(6),
+    &:nth-child(7) {
+      border-right: 1px solid #999;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
   }
 }
