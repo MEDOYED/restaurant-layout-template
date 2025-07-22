@@ -6,7 +6,7 @@ const useViewportHeight = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setViewportHeight(window.innerWidth);
+      setViewportHeight(window.innerHeight);
     };
 
     window.addEventListener("resize", handleResize);
