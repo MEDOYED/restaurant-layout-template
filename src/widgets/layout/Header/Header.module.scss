@@ -1,31 +1,23 @@
 .header {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 10vh;
   background-color: #000;
   color: #ffffff;
 
-  .list {
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 3rem 0;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10;
   }
-}
-
-.fixedHeader {
-  position: fixed;
-  top: 0; // прилипає до верху екрану
-  z-index: 10;
-  width: 100%;
-  height: 10vh;
-  background-color: #000;
-  color: #ffffff;
 
   .list {
+    height: 100%;
     color: #ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 3rem;
     padding: 3rem 0;
   }
