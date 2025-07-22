@@ -1,5 +1,4 @@
 import SectionHero from "../../widgets/sections/SectionHero/SectionHero";
-import Header from "../../widgets/layout/Header/Header";
 import SectionOpeningHours from "../../widgets/sections/SectionOpeningHours/SectionOpeningHours";
 import { SectionAboutUs } from "@widgets";
 
@@ -9,7 +8,6 @@ const PageHome = () => {
   return (
     <main className={s.pageHome}>
       <SectionHero />
-
       <SectionOpeningHours />
       <SectionAboutUs />
     </main>
