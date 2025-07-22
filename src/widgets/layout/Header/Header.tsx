@@ -27,8 +27,7 @@ const Header = () => {
   const headerClassName = cn(s.header, {
     [s.fixed]:
       distanceFromTop <= 0 &&
-      // scrollPosition > viewportHeight - viewportHeight / 10,
-      scrollPosition > 800,
+      scrollPosition > viewportHeight - viewportHeight / 10,
   });
 
   const toggleMenu = () => {
