@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDistanceFromTop } from "../../../shared/lib/hooks/useDistanceFromTop";
 import { useScrollPosition } from "../../../shared/lib/hooks/useScrollPosition";
+import useViewportHeight from "@shared/lib/hooks/useViewportHeight";
 
 import cn from "classnames";
 
@@ -19,9 +20,15 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headerRef, distanceFromTop] = useDistanceFromTop();
   const scrollPosition = useScrollPosition();
+  const viewportHeight = useViewportHeight();
+
+  console.log(scrollPosition);
 
   const headerClassName = cn(s.header, {
-    [s.fixed]: distanceFromTop <= 0 && scrollPosition >= 865,
+    [s.fixed]:
+      distanceFromTop <= 0 &&
+      // scrollPosition > viewportHeight - viewportHeight / 10,
+      scrollPosition > 800,
   });
 
   const toggleMenu = () => {
@@ -33,14 +40,20 @@ const Header = () => {
       className={headerClassName}
       ref={headerRef}
     >
-      <button 
+      <button
         className={s.hamburger}
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
-        <span className={cn(s.hamburger__line, { [s.open]: isMenuOpen })}></span>
-        <span className={cn(s.hamburger__line, { [s.open]: isMenuOpen })}></span>
-        <span className={cn(s.hamburger__line, { [s.open]: isMenuOpen })}></span>
+        <span
+          className={cn(s.hamburger__line, { [s.open]: isMenuOpen })}
+        ></span>
+        <span
+          className={cn(s.hamburger__line, { [s.open]: isMenuOpen })}
+        ></span>
+        <span
+          className={cn(s.hamburger__line, { [s.open]: isMenuOpen })}
+        ></span>
       </button>
 
       <ul className={cn(s.list, { [s.open]: isMenuOpen })}>
