@@ -62,13 +62,9 @@ export { default } from "./ButtonForm";
 
 ```ts
 export { default as ButtonForm } from "./ButtonForm";
-// Export ButtonForm as default from this barrel
-export { default } from "./ButtonForm";
 ```
 
-- Provides both named and default exports
 - Named export allows `import { ButtonForm }`
-- Default export allows `import ButtonForm`
 
 #### 3. Category Level (`ui/index.ts`)
 
@@ -110,4 +106,3 @@ import ButtonForm from "@shared/ui/buttons/ButtonForm";
 3. **Refactoring Safety**: Moving files only requires updating barrel exports
 4. **IDE Support**: Better autocomplete and navigation
 5. **Flexible Access**: Multiple import patterns for different use cases
-
