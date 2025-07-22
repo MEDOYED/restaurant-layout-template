@@ -10,7 +10,7 @@ const menuItems = [
   "Promocje",
   "Rezerwacja",
   "Galeria",
-  "Co nowego?",
+  "Co nowego",
   "Kontakt",
 ];
 

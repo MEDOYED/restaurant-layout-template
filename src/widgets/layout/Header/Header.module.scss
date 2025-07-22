@@ -18,7 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     padding: 3rem 0;
+
+    &__item {
+      cursor: pointer;
+    }
   }
 }
