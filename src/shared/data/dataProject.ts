@@ -1,5 +1,5 @@
 const dataProject = {
-  companyName: "Estação Leopoldina",
+  companyName: "Komediowa",
   phoneNumbers: "11 2564-7445 | 11 2534-7106",
   openHours: {
     monday: "09:00–23:00",
