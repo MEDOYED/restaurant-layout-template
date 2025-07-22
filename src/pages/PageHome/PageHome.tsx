@@ -1,5 +1,7 @@
-import SectionOpeningHours from "../../widgets/sections/SectionOpeningHours/SectionOpeningHours";
 import SectionHero from "../../widgets/sections/SectionHero/SectionHero";
+import Header from "../../widgets/layout/Header/Header";
+import SectionOpeningHours from "../../widgets/sections/SectionOpeningHours/SectionOpeningHours";
+import { SectionAboutUs } from "@widgets";
 
 import s from "./PageHome.module.scss";
 
@@ -9,6 +11,7 @@ const PageHome = () => {
       <SectionHero />
 
       <SectionOpeningHours />
+      <SectionAboutUs />
     </main>
   );
 };

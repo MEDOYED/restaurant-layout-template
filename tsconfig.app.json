@@ -13,7 +13,7 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
@@ -23,7 +23,22 @@
     "noUnusedParameters": false,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@shared": [
+        "shared/index.ts"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@widgets": [
+        "widgets/index.ts"
+      ],
+      "@widgets/*": [
+        "widgets/*"
+      ]
+    }
   },
   "include": [
     "src"
